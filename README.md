@@ -1,6 +1,8 @@
-# ASR Application Setup Guide
+# ASR Application Setup Guide (Task 1)
 
 This README provides instructions to set up the environment and run inference using Docker. Follow these steps to get your system ready and execute the inference tasks.
+**Note: Due to api call limits in huggingface the predictions for csv-valid is limited to 1000 samples, attached is the error**
+![API Limit](./images/api_call_limit.png)
 
 ## 1. **Environment Setup**
 
@@ -54,4 +56,6 @@ To obtain the prediction results, use the following command access http://0.0.0.
 
 ![FastAPI Interactive Server](./images/file_removed.png)
 ![FastAPI Prediction Results](./images/results.png)
+
+
 
