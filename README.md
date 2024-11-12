@@ -24,7 +24,7 @@ git clone https://github.com/crystaltys/htx_assesment.git
 cd htx_assesment/
 ```
 ### 1.3 Build the Docker Image
-Navigate to the project directory (where your Dockerfile is located) and build the Docker image. This will set up the required environment for running the inference:
+Navigate to the root directory ./htx_assesment and build the Docker image. This will set up the required environment for running the inference:
 
 ```bash
 docker build -t asr-api -f asr/app.Dockerfile .
