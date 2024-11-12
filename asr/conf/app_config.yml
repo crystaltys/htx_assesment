@@ -1,0 +1,8 @@
+raw_data_path                   : ../data/raw/common_voice/
+data_type                       : valid
+data_group                      : dev
+
+model:
+  selector                      : wav2vec2-large-960h
+  wav2vec2-large-960h:
+    frequency                   : 16000
