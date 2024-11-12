@@ -53,5 +53,5 @@ To obtain the prediction results, use the following command access http://0.0.0.
 ### 2.3 Remove File and Get Predictions
 
 ![FastAPI Interactive Server](./images/file_removed.png)
-![FastAPI Prediction Results](./images/images/Screenshot 2024-11-12 at 23.21.44.png)
+![FastAPI Prediction Results](./images/Screenshot 2024-11-12 at 23.21.44.png)
 
