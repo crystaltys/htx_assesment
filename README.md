@@ -39,7 +39,7 @@ Add .env file to ./asr directory.
 ## 2. **Running Inference with Docker**
 Once the environment is set up and the image is built, you can start the container to run inference. There is a volume mount when running the docker container as the requirement requires the file to be deleted once processed. 
 
-### 2.1 Run the Docker Container
+### 2.1 Mount Volume + Run the Docker Container
 To run the Docker container with the inference setup, use the following command:
 
 ```bash
