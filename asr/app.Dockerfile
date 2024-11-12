@@ -5,14 +5,13 @@ RUN apt-get update && apt-get install -y \
     python3-setuptools \
     python3-pip \
     python3-distutils \
-    && apt-get clean && rm -rf /tmp/* /var/tmp/*
+    ffmpeg && apt-get clean && rm -rf /tmp/* /var/tmp/*
 
 WORKDIR /asr
 
 COPY ./requirements.txt /asr/requirements.txt
 RUN pip3 install -r requirements.txt
 
-RUN mkdir -p /data/
 COPY ./asr/src /asr/src/
 COPY ./asr/conf /asr/conf/
 COPY ./asr/.env /asr/.env

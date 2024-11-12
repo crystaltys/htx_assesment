@@ -39,8 +39,8 @@ class DataPipeline(Inference):
         df = pd.DataFrame([payload.file], columns=['filename'])
         out_sample = self.predict(df)[-1]
         if out_sample:
-            logging.DEBUG(f"Mock removing file")
-            #os.remove(payload.file)
+            logging.info(f"Mock removing file")
+            os.remove(payload.file)
         return out_sample
 
     def process_raw_data(self, df: pd.DataFrame):
@@ -52,8 +52,6 @@ class DataPipeline(Inference):
         try:
             out_data = []
             for i, (_, row) in enumerate(df.iterrows()):
-                if not os.path.exists(row['filename']):
-                    raise FileNotFoundError
                 audio = AudioSegment.from_mp3(row['filename']).set_frame_rate(self._sampling_rate)
                 mp3_io=io.BytesIO()
                 audio.export(mp3_io, format="mp3")
